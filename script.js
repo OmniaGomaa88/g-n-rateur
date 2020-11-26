@@ -6597,16 +6597,18 @@ function getRandomColor() {
   ];
 
   // Your code below
-var BottonClick =document.getElementById("new-quote");
-var text = document.getElementById("quote-box");
+// var BottonClick =document.getElementById("new-quote");//pour tester
+
 var  changeColor =function(){
+  var textBox = document.getElementById("quote-box");
 document.body.style.backgroundColor=(randomColor);
-text.style.color=(randomColor);
+textBox.style.color=(randomColor);
 BottonClick.style.backgroundColor=(randomColor);
 
 }
+//BottonClick.addEventListener("click",changeColor);//pour tester
 
-BottonClick.addEventListener("click",changeColor);
+
 
   // Your code above
 }
@@ -6620,6 +6622,17 @@ function getRandomQuote() {
   currentAuthor = randomQuote.author;
 
   // Your code below
+  // var BottonClick =document.getElementById("new-quote");/pour tester
+  var quot = document.getElementById("text");
+  var authorName = document.getElementById("author");
+var changText =function (){
+  quot.textContent= (currentQuote);
+  authorName.textContent=(currentAuthor);
+  console.log("quot");
+  
+}
+//seulment pour tester
+// BottonClick.addEventListener("click",changText);
 
   // Your code above
 
@@ -6629,5 +6642,5 @@ function getRandomQuote() {
 getRandomQuote();
 
 // Your code below
-
+//créé le bottun !!
 // Your code above
